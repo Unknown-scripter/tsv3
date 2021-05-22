@@ -1,0 +1,1193 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local V3 = Instance.new("ScreenGui")
+local SettingsBox = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Comingsoon = Instance.new("TextButton")
+local Comingsoon_2 = Instance.new("TextButton")
+local Okin = Instance.new("TextButton")
+local Autodash = Instance.new("TextButton")
+local ExtremeObby = Instance.new("TextButton")
+local RegularObby = Instance.new("TextButton")
+local AutoClick = Instance.new("TextButton")
+local Kill = Instance.new("TextButton")
+local DescSpeed = Instance.new("TextLabel")
+local JumpBox = Instance.new("TextBox")
+local DescJP = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local SpeedBox = Instance.new("TextBox")
+local Update = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Update_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Bar = Instance.new("Frame")
+local Load = Instance.new("Frame")
+local Loading = Instance.new("TextLabel")
+local Updating = Instance.new("TextLabel")
+local Fetching = Instance.new("TextLabel")
+local Done = Instance.new("TextLabel")
+
+--Properties:
+
+V3.Name = "V3"
+V3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+V3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+V3.ResetOnSpawn = false
+
+SettingsBox.Name = "SettingsBox"
+SettingsBox.Parent = V3
+SettingsBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SettingsBox.BackgroundTransparency = 0.200
+SettingsBox.BorderColor3 = Color3.fromRGB(53, 53, 53)
+SettingsBox.Position = UDim2.new(1.29999995, 0, 0.300000012, 0)
+SettingsBox.Size = UDim2.new(0.5, 0, 0.300000012, 0)
+
+Title.Name = "Title"
+Title.Parent = SettingsBox
+Title.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 53, 7)
+Title.Position = UDim2.new(0.0199999996, 0, 0.0250000004, 0)
+Title.Size = UDim2.new(0.300000012, 0, 0.200000003, 0)
+Title.Font = Enum.Font.Highway
+Title.Text = "Tycoon-Sploit V3"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextStrokeTransparency = 0.500
+Title.TextWrapped = true
+
+Comingsoon.Name = "Coming soon"
+Comingsoon.Parent = SettingsBox
+Comingsoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comingsoon.BackgroundTransparency = 0.300
+Comingsoon.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Comingsoon.Position = UDim2.new(0.513999999, 0, 0.829999983, 0)
+Comingsoon.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+Comingsoon.Font = Enum.Font.Highway
+Comingsoon.Text = "(Coming Soon)"
+Comingsoon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Comingsoon.TextScaled = true
+Comingsoon.TextSize = 14.000
+Comingsoon.TextStrokeTransparency = 0.500
+Comingsoon.TextWrapped = true
+
+Comingsoon_2.Name = "Coming soon"
+Comingsoon_2.Parent = SettingsBox
+Comingsoon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comingsoon_2.BackgroundTransparency = 0.300
+Comingsoon_2.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Comingsoon_2.Position = UDim2.new(0.209999993, 0, 0.829999983, 0)
+Comingsoon_2.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+Comingsoon_2.Font = Enum.Font.Highway
+Comingsoon_2.Text = "(Coming soon)"
+Comingsoon_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Comingsoon_2.TextScaled = true
+Comingsoon_2.TextSize = 14.000
+Comingsoon_2.TextStrokeTransparency = 0.500
+Comingsoon_2.TextWrapped = true
+
+Okin.Name = "Okin"
+Okin.Parent = SettingsBox
+Okin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Okin.BackgroundTransparency = 0.300
+Okin.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Okin.Position = UDim2.new(0.361999989, 0, 0.469999999, 0)
+Okin.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+Okin.Font = Enum.Font.Highway
+Okin.Text = "Okin shop"
+Okin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Okin.TextScaled = true
+Okin.TextSize = 14.000
+Okin.TextStrokeTransparency = 0.500
+Okin.TextWrapped = true
+
+Autodash.Name = "Autodash"
+Autodash.Parent = SettingsBox
+Autodash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autodash.BackgroundTransparency = 0.300
+Autodash.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Autodash.Position = UDim2.new(0.667999983, 0, 0.649999976, 0)
+Autodash.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+Autodash.Font = Enum.Font.Highway
+Autodash.Text = "Auto star dash (coming soon)"
+Autodash.TextColor3 = Color3.fromRGB(255, 255, 255)
+Autodash.TextScaled = true
+Autodash.TextSize = 14.000
+Autodash.TextStrokeTransparency = 0.500
+Autodash.TextWrapped = true
+
+ExtremeObby.Name = "ExtremeObby"
+ExtremeObby.Parent = SettingsBox
+ExtremeObby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtremeObby.BackgroundTransparency = 0.300
+ExtremeObby.BorderColor3 = Color3.fromRGB(104, 104, 104)
+ExtremeObby.Position = UDim2.new(0.361999989, 0, 0.649999976, 0)
+ExtremeObby.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+ExtremeObby.Font = Enum.Font.Highway
+ExtremeObby.Text = "Extreme Obby"
+ExtremeObby.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExtremeObby.TextScaled = true
+ExtremeObby.TextSize = 14.000
+ExtremeObby.TextStrokeTransparency = 0.500
+ExtremeObby.TextWrapped = true
+
+RegularObby.Name = "RegularObby"
+RegularObby.Parent = SettingsBox
+RegularObby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RegularObby.BackgroundTransparency = 0.300
+RegularObby.BorderColor3 = Color3.fromRGB(104, 104, 104)
+RegularObby.Position = UDim2.new(0.057, 0, 0.649999976, 0)
+RegularObby.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+RegularObby.Font = Enum.Font.Highway
+RegularObby.Text = "Regular Obby"
+RegularObby.TextColor3 = Color3.fromRGB(255, 255, 255)
+RegularObby.TextScaled = true
+RegularObby.TextSize = 14.000
+RegularObby.TextStrokeTransparency = 0.500
+RegularObby.TextWrapped = true
+
+AutoClick.Name = "AutoClick"
+AutoClick.Parent = SettingsBox
+AutoClick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoClick.BackgroundTransparency = 0.300
+AutoClick.BorderColor3 = Color3.fromRGB(104, 104, 104)
+AutoClick.Position = UDim2.new(0.057, 0, 0.469999999, 0)
+AutoClick.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+AutoClick.Font = Enum.Font.Highway
+AutoClick.Text = "Auto Click Tycoon"
+AutoClick.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoClick.TextScaled = true
+AutoClick.TextSize = 14.000
+AutoClick.TextStrokeTransparency = 0.500
+AutoClick.TextWrapped = true
+
+Kill.Name = "Kill"
+Kill.Parent = SettingsBox
+Kill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kill.BackgroundTransparency = 0.300
+Kill.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Kill.Position = UDim2.new(0.667999983, 0, 0.469999999, 0)
+Kill.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+Kill.Font = Enum.Font.Highway
+Kill.Text = "Kill fake bosses"
+Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kill.TextScaled = true
+Kill.TextSize = 14.000
+Kill.TextStrokeTransparency = 0.500
+Kill.TextWrapped = true
+
+DescSpeed.Name = "DescSpeed"
+DescSpeed.Parent = SettingsBox
+DescSpeed.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+DescSpeed.BackgroundTransparency = 1.000
+DescSpeed.BorderColor3 = Color3.fromRGB(0, 53, 7)
+DescSpeed.Position = UDim2.new(0.349999994, 0, 0.100000001, 0)
+DescSpeed.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+DescSpeed.Font = Enum.Font.Highway
+DescSpeed.Text = "Speed"
+DescSpeed.TextColor3 = Color3.fromRGB(255, 255, 0)
+DescSpeed.TextScaled = true
+DescSpeed.TextSize = 14.000
+DescSpeed.TextStrokeTransparency = 0.500
+DescSpeed.TextWrapped = true
+
+JumpBox.Name = "JumpBox"
+JumpBox.Parent = SettingsBox
+JumpBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.BackgroundTransparency = 0.500
+JumpBox.Position = UDim2.new(0.550000012, 0, 0.25, 0)
+JumpBox.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+JumpBox.Font = Enum.Font.SourceSansBold
+JumpBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+JumpBox.Text = "240"
+JumpBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.TextScaled = true
+JumpBox.TextSize = 14.000
+JumpBox.TextStrokeTransparency = 0.000
+JumpBox.TextWrapped = true
+
+DescJP.Name = "DescJP"
+DescJP.Parent = SettingsBox
+DescJP.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+DescJP.BackgroundTransparency = 1.000
+DescJP.BorderColor3 = Color3.fromRGB(0, 53, 7)
+DescJP.Position = UDim2.new(0.550000012, 0, 0.100000001, 0)
+DescJP.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+DescJP.Font = Enum.Font.Highway
+DescJP.Text = "Jump Power"
+DescJP.TextColor3 = Color3.fromRGB(255, 255, 0)
+DescJP.TextScaled = true
+DescJP.TextSize = 14.000
+DescJP.TextStrokeTransparency = 0.500
+DescJP.TextWrapped = true
+
+TextButton.Parent = SettingsBox
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.340672493, 0, -0.00196048478, 0)
+TextButton.Size = UDim2.new(0.366919786, 0, 0.137969106, 0)
+TextButton.Style = Enum.ButtonStyle.RobloxRoundButton
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Set Speed and Jump Power"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 40.000
+TextButton.TextWrapped = true
+
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = SettingsBox
+SpeedBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.BackgroundTransparency = 0.500
+SpeedBox.Position = UDim2.new(0.34934926, 0, 0.25, 0)
+SpeedBox.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+SpeedBox.Font = Enum.Font.SourceSansBold
+SpeedBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+SpeedBox.Text = "150"
+SpeedBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.TextScaled = true
+SpeedBox.TextSize = 14.000
+SpeedBox.TextStrokeTransparency = 0.000
+SpeedBox.TextWrapped = true
+
+Update.Name = "Update"
+Update.Parent = SettingsBox
+Update.BackgroundColor3 = Color3.fromRGB(16, 128, 64)
+Update.BackgroundTransparency = 0.300
+Update.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Update.Position = UDim2.new(0.019039046, 0, 0.249249458, 0)
+Update.Size = UDim2.new(0.300000012, 0, 0.150000006, 0)
+Update.Font = Enum.Font.Highway
+Update.Text = "Update to latest version"
+Update.TextColor3 = Color3.fromRGB(255, 255, 255)
+Update.TextScaled = true
+Update.TextSize = 14.000
+Update.TextStrokeTransparency = 0.500
+Update.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = V3
+Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open.BackgroundTransparency = 0.300
+Open.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Open.Position = UDim2.new(0.445514053, 0, 0.114403956, 0)
+Open.Size = UDim2.new(0.108943641, 0, 0.0419867821, 0)
+Open.Font = Enum.Font.Highway
+Open.Text = "Admin Panel"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextStrokeTransparency = 0.500
+Open.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = V3
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BackgroundTransparency = 0.300
+Close.BorderColor3 = Color3.fromRGB(104, 104, 104)
+Close.Position = UDim2.new(0.445514053, 0, 0.114403956, 0)
+Close.Size = UDim2.new(0.108943641, 0, 0.0419867821, 0)
+Close.Visible = false
+Close.Font = Enum.Font.Highway
+Close.Text = "Admin Panel"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextStrokeTransparency = 0.500
+Close.TextWrapped = true
+
+Update_2.Name = "Update"
+Update_2.Parent = V3
+Update_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Update_2.Size = UDim2.new(1, 0, 1, 0)
+Update_2.Visible = false
+
+ImageLabel.Parent = Update_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.472885042, 0, 0.473509938, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxassetid://6835107738"
+
+Bar.Name = "Bar"
+Bar.Parent = Update_2
+Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Bar.Position = UDim2.new(0.431670278, 0, 0.556291401, 0)
+Bar.Size = UDim2.new(0.135032535, 0, 0.043046359, 0)
+
+Load.Name = "Load"
+Load.Parent = Bar
+Load.BackgroundColor3 = Color3.fromRGB(16, 128, 64)
+Load.Position = UDim2.new(-0.0031186759, 0, -0.00140146108, 0)
+Load.Size = UDim2.new(0, 0, 1, 0)
+Load.Visible = false
+
+Loading.Name = "Loading"
+Loading.Parent = Update_2
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.BackgroundTransparency = 1.000
+Loading.Position = UDim2.new(0.43771714, 0, 0.603476822, 0)
+Loading.Size = UDim2.new(0, 250, 0, 50)
+Loading.Visible = false
+Loading.Font = Enum.Font.Code
+Loading.Text = "Loading..."
+Loading.TextColor3 = Color3.fromRGB(15, 128, 255)
+Loading.TextScaled = true
+Loading.TextSize = 14.000
+Loading.TextWrapped = true
+
+Updating.Name = "Updating"
+Updating.Parent = Update_2
+Updating.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updating.BackgroundTransparency = 1.000
+Updating.Position = UDim2.new(0.401985139, 0, 0.603476822, 0)
+Updating.Size = UDim2.new(0, 395, 0, 50)
+Updating.Visible = false
+Updating.Font = Enum.Font.Code
+Updating.Text = "Checking For Updates..."
+Updating.TextColor3 = Color3.fromRGB(128, 0, 2)
+Updating.TextScaled = true
+Updating.TextSize = 14.000
+Updating.TextWrapped = true
+
+Fetching.Name = "Fetching"
+Fetching.Parent = Update_2
+Fetching.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fetching.BackgroundTransparency = 1.000
+Fetching.Position = UDim2.new(0.43771714, 0, 0.603476822, 0)
+Fetching.Size = UDim2.new(0, 250, 0, 50)
+Fetching.Visible = false
+Fetching.Font = Enum.Font.Code
+Fetching.Text = "Fetching data..."
+Fetching.TextColor3 = Color3.fromRGB(16, 128, 1)
+Fetching.TextScaled = true
+Fetching.TextSize = 14.000
+Fetching.TextWrapped = true
+
+Done.Name = "Done"
+Done.Parent = Update_2
+Done.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Done.BackgroundTransparency = 1.000
+Done.Position = UDim2.new(0.43771714, 0, 0.603476822, 0)
+Done.Size = UDim2.new(0, 250, 0, 50)
+Done.Visible = false
+Done.Font = Enum.Font.Code
+Done.Text = "Done!!!"
+Done.TextColor3 = Color3.fromRGB(32, 255, 255)
+Done.TextScaled = true
+Done.TextSize = 14.000
+Done.TextWrapped = true
+
+-- Scripts:
+
+local function RHPIRFR_fake_script() -- Okin.LocalScript 
+	local script = Instance.new('LocalScript', Okin)
+
+	script.Parent.MouseButton1Down:connect(function()
+		wait()
+		local clickdetector = workspace.Okin.ClickDetector
+		fireclickdetector(clickdetector)
+	end)
+end
+coroutine.wrap(RHPIRFR_fake_script)()
+local function UIBNI_fake_script() -- ExtremeObby.LocalScript 
+	local script = Instance.new('LocalScript', ExtremeObby)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29, 170, -512.8)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(127, 170, -1000.8)
+		wait(2)
+		local Event = game:GetService("ReplicatedStorage").Events.Teleport
+		Event:InvokeServer()
+	
+	end)
+end
+coroutine.wrap(UIBNI_fake_script)()
+local function NCNF_fake_script() -- RegularObby.LocalScript 
+	local script = Instance.new('LocalScript', RegularObby)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-243, 170, 634.8)
+		wait(2)
+		local Event = game:GetService("ReplicatedStorage").Events.Teleport
+		Event:InvokeServer()
+	
+	end)
+end
+coroutine.wrap(NCNF_fake_script)()
+local function NXATGL_fake_script() -- AutoClick.LocalScript 
+	local script = Instance.new('LocalScript', AutoClick)
+
+	script.Parent.MouseButton1Down:connect(function()
+		while true do
+			wait()
+			local clickdetector = workspace.Err0r61OSpawner.Button.ClickDetector 
+			fireclickdetector(clickdetector)
+		end
+	end)
+end
+coroutine.wrap(NXATGL_fake_script)()
+local function QMBM_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Rexob21"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(QMBM_fake_script)()
+local function SMSX_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Lucid4"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(SMSX_fake_script)()
+local function KSXUAX_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MrSuper213"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(KSXUAX_fake_script)()
+local function YQPJNI_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake nuclearnovalol"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(YQPJNI_fake_script)()
+local function ADOML_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jfknight28"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(ADOML_fake_script)()
+local function LHZRB_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Platform14"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(LHZRB_fake_script)()
+local function OJLVNL_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake N_evo"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(OJLVNL_fake_script)()
+local function KKWVOR_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MrSuper213"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(KKWVOR_fake_script)()
+local function PMIDH_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake 0fmx"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(PMIDH_fake_script)()
+local function CLBAAD_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake S_peezy"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(CLBAAD_fake_script)()
+local function XDAH_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ThugXY28"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(XDAH_fake_script)()
+local function CCWF_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Mo_onlord"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(CCWF_fake_script)()
+local function GJFY_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake springgun19"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(GJFY_fake_script)()
+local function TBUG_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake RayhanMahtab_YT"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(TBUG_fake_script)()
+local function VCKSMNN_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake WizardlyJoker"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(VCKSMNN_fake_script)()
+local function JTLCUPV_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Legendarymanman"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(JTLCUPV_fake_script)()
+local function SVCKJ_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake danperor"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(SVCKJ_fake_script)()
+local function DPYQS_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ThugXY28"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(DPYQS_fake_script)()
+local function SBGPOG_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MissCrytex"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(SBGPOG_fake_script)()
+local function EIJIX_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ObscureJoy"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(EIJIX_fake_script)()
+local function MYRQ_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake RayhanMahtab_YT"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(MYRQ_fake_script)()
+local function BSSNYN_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake thickiest"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(BSSNYN_fake_script)()
+local function VUWFKWB_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MissCrytex"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(VUWFKWB_fake_script)()
+local function YXVP_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake noob00246"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(YXVP_fake_script)()
+local function CZRW_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake xXTheInspiredXx"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(CZRW_fake_script)()
+local function WIJNO_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Oatur"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(WIJNO_fake_script)()
+local function IYDMH_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake kingfirelord360bro1"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(IYDMH_fake_script)()
+local function HPOWX_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake sakintan7"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(HPOWX_fake_script)()
+local function DGOWS_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Kikitob"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(DGOWS_fake_script)()
+local function RZAHSI_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Appalachee_Gamer"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(RZAHSI_fake_script)()
+local function OPOYNO_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jt536170"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(OPOYNO_fake_script)()
+local function ADRE_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake kingfirelord360bro1"].Head:Destroy()
+	end)
+end
+coroutine.wrap(ADRE_fake_script)()
+local function KITSJ_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Toukua"].Head:Destroy()
+	end)
+end
+coroutine.wrap(KITSJ_fake_script)()
+local function ARSNUY_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jjonesyy1"].Head:Destroy()
+	end)
+end
+coroutine.wrap(ARSNUY_fake_script)()
+local function DYYEKCH_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Execious"].Head:Destroy()
+	end)
+end
+coroutine.wrap(DYYEKCH_fake_script)()
+local function XDXAW_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Gforces_007"].Head:Destroy()
+	end)
+end
+coroutine.wrap(XDXAW_fake_script)()
+local function RVIGLJA_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake 123thegiver123"].Head:Destroy()
+	end)
+end
+coroutine.wrap(RVIGLJA_fake_script)()
+local function QQKUNNF_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake PurpleHaeze"].Head:Destroy()
+	end)
+end
+coroutine.wrap(QQKUNNF_fake_script)()
+local function BKDT_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake 5oiw"].Head:Destroy()
+	end)
+end
+coroutine.wrap(BKDT_fake_script)()
+local function IQTI_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake AgentLies"].Head:Destroy()
+	end)
+end
+coroutine.wrap(IQTI_fake_script)()
+local function LTLC_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake whatupdawg23"].Head:Destroy()
+	end)
+end
+coroutine.wrap(LTLC_fake_script)()
+local function HTWAT_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ComDude1011"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HTWAT_fake_script)()
+local function TVJQX_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake oreotwistlickdunk"].Head:Destroy()
+	end)
+end
+coroutine.wrap(TVJQX_fake_script)()
+local function DMWDCQX_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake prestna"].Head:Destroy()
+	end)
+end
+coroutine.wrap(DMWDCQX_fake_script)()
+local function SGCJPD_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake nuclearnovalol"].Head:Destroy()
+	end)
+end
+coroutine.wrap(SGCJPD_fake_script)()
+local function VWKGJ_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake hotrodeoin"].Head:Destroy()
+	end)
+end
+coroutine.wrap(VWKGJ_fake_script)()
+local function KPKD_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake RAYMONDTHEGHOST"].Head:Destroy()
+	end)
+end
+coroutine.wrap(KPKD_fake_script)()
+local function KLIK_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake wh0opey"].Head:Destroy()
+	end)
+end
+coroutine.wrap(KLIK_fake_script)()
+local function HPHHFT_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake EmperorRektus"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HPHHFT_fake_script)()
+local function QAOAT_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Smart10000"].Head:Destroy()
+	end)
+end
+coroutine.wrap(QAOAT_fake_script)()
+local function KOUF_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake luanpode"].Head:Destroy()
+	end)
+end
+coroutine.wrap(KOUF_fake_script)()
+local function QYUIZ_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ITZWINNIE_MAN"].Head:Destroy()
+	end)
+end
+coroutine.wrap(QYUIZ_fake_script)()
+local function UMMK_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jordan0305"].Head:Destroy()
+	end)
+end
+coroutine.wrap(UMMK_fake_script)()
+local function TCMPUI_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ImNoobButBetterThanU"].Head:Destroy()
+	end)
+end
+coroutine.wrap(TCMPUI_fake_script)()
+local function RKLV_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ShadoowWolf"].Head:Destroy()
+	end)
+end
+coroutine.wrap(RKLV_fake_script)()
+local function JNWXTQ_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake adriantejada41522"].Head:Destroy()
+	end)
+end
+coroutine.wrap(JNWXTQ_fake_script)()
+local function AIZXM_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake garra0215"].Head:Destroy()
+	end)
+end
+coroutine.wrap(AIZXM_fake_script)()
+local function HJUTO_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake markjjjallen"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HJUTO_fake_script)()
+local function TSKRJIN_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Kostya1337K"].Head:Destroy()
+	end)
+end
+coroutine.wrap(TSKRJIN_fake_script)()
+local function KUOL_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Sylveon2222 (Sylveon Wins Simulator)"].Head:Destroy()
+	end)
+end
+coroutine.wrap(KUOL_fake_script)()
+local function ABOU_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake littledad123456789"].Head:Destroy()
+	end)
+end
+coroutine.wrap(ABOU_fake_script)()
+local function CBROG_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Samirjan_2007"].Head:Destroy()
+	end)
+end
+coroutine.wrap(CBROG_fake_script)()
+local function IITB_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake LexyRepose"].Head:Destroy()
+	end)
+end
+coroutine.wrap(IITB_fake_script)()
+local function SGTEK_fake_script() -- Kill.LocalScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake DarkyDan25"].Head:Destroy()
+	end)
+end
+coroutine.wrap(SGTEK_fake_script)()
+local function UHBW_fake_script() -- SettingsBox.ReqStats 
+	local script = Instance.new('LocalScript', SettingsBox)
+
+	-- sweetheart of sigma chi Luau Decompiler ~gamma~
+	-- 111/126 operations decompiled
+	local v1 = game.Players.LocalPlayer
+	game.Players:WaitForChild("PlayerData")
+	game.Players.LocalPlayer.PlayerData:WaitForChild("SaveData")
+	wait()
+	local v3 = 1
+	if v2 == v3 then
+		if not v1 then
+			game.Players.LocalPlayer.PlayerData.SaveData.Value()
+			local v2 = game.Players.LocalPlayer.Character
+			if not v2 then
+				v2 = true
+				script.Parent.JumpPower.Focused:Connect(function()
+					local v1 = false
+					v2 = v1
+					return 
+				end)
+				script.Parent.Speed.Focused:Connect(function()
+					local v1 = false
+					v2 = v1
+					return 
+				end)
+				script.Parent.JumpPower.FocusLost:Connect(function()
+					local v1 = true
+					v2 = v1
+					return 
+				end)
+				script.Parent.Speed.FocusLost:Connect(function()
+					local v1 = true
+					v2 = v1
+					return 
+				end)
+				wait(3)
+				local v3 = script.Parent.Speed
+				v3.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+				v3 = script.Parent.JumpPower
+				v3.Text = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+				if v3 then
+					wait(0.100000)(function()
+						local v3 = v2
+						if v3 then
+							v3 = script.Parent.JumpPower.Parent.Speed
+							v3.Text = game.ReplicatedStorage.Events.ReqStats:InvokeServer(script.Parent.Speed.Text, script.Parent.JumpPower.Text)
+							v3 = script.Parent.JumpPower
+							v3.Text = game.ReplicatedStorage.Events
+							return 
+						end
+					end)
+					if not v1 then
+						return 
+					end
+				end
+			end
+		end
+	end
+end
+coroutine.wrap(UHBW_fake_script)()
+local function MEIFF_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.SpeedBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(MEIFF_fake_script)()
+local function HXRD_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.JumpBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpPower = setspeed
+		end
+	end)
+end
+coroutine.wrap(HXRD_fake_script)()
+local function GHEXF_fake_script() -- Update.LocalScript 
+	local script = Instance.new('LocalScript', Update)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Update.Visible = true
+		wait()
+		script.Parent.Parent.Parent.Update.Bar.Load.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Parent.Update.Bar.Load.LocalScript.Disabled = false
+		wait()
+		script.Parent.Parent.Parent.Update.Loading.Visible = true
+		wait(0.9)
+		script.Parent.Parent.Parent.Update.Loading.Visible = false
+		script.Parent.Parent.Parent.Update.Fetching.Visible = true
+		wait(2)
+		script.Parent.Parent.Parent.Update.Fetching.Visible = false
+		script.Parent.Parent.Parent.Update.Updating.Visible = true
+		wait(2)
+		script.Parent.Parent.Parent.Update.Updating.Visible = false
+		script.Parent.Parent.Parent.Update.Done.Visible = true
+		wait(2)
+		script.Parent.Parent.Parent.Update.Visible = false
+		wait(0.2)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Unknown-scripter/Ts-v3/main/Ts?token=AUBLYFU7MNB277FF2ANJGC3AUX45W"))()
+		script.Parent.Parent.Parent:Destroy()
+	
+	end)
+end
+coroutine.wrap(GHEXF_fake_script)()
+local function LYDG_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.PlayerGui.V3.Open.Visible = false
+		game.Players.LocalPlayer.PlayerGui.V3.Close.Visible = true
+	end)
+end
+coroutine.wrap(LYDG_fake_script)()
+local function RUBD_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		local START_POSITION = UDim2.new(0.3, 0, 1.3, 0)
+	local GOAL_POSITION = UDim2.new(0.3, 0, 0.3, 0)
+	
+	local guiObject = script.Parent.Parent.SettingsBox
+	
+	local function callback(state)
+		if state == Enum.TweenStatus.Completed then
+			print("The tween completed uninterrupted")
+		elseif state == Enum.TweenStatus.Canceled then
+			print("Another tween cancelled this one")
+		end
+	end
+	
+	-- Initialize the GuiObject position, then start the tween:
+	guiObject.Position = START_POSITION
+	local willPlay = guiObject:TweenPosition(
+		GOAL_POSITION,           -- Final position the tween should reach
+		Enum.EasingDirection.In, -- Direction of the easing
+		Enum.EasingStyle.Sine,   -- Kind of easing to apply
+		2,                       -- Duration of the tween in seconds
+		true,                    -- Whether in-progress tweens are interrupted
+		callback                 -- Function to be callled when on completion/cancelation
+	)
+	if willPlay then
+		print("The tween will play")
+	else
+		print("The tween will not play")
+		end
+		end)
+end
+coroutine.wrap(RUBD_fake_script)()
+local function FOYMZ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.PlayerGui.V3.Open.Visible = true
+		game.Players.LocalPlayer.PlayerGui.V3.Close.Visible = false
+	end)
+end
+coroutine.wrap(FOYMZ_fake_script)()
+local function YRAZITQ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		local START_POSITION = UDim2.new(0.3, 0, 0.3, 0)
+	local GOAL_POSITION = UDim2.new(0.3, 0, 3.3, 0)
+	
+	local guiObject = script.Parent.Parent.SettingsBox
+	
+	local function callback(state)
+		if state == Enum.TweenStatus.Completed then
+			print("The tween completed uninterrupted")
+		elseif state == Enum.TweenStatus.Canceled then
+			print("Another tween cancelled this one")
+		end
+	end
+	
+	-- Initialize the GuiObject position, then start the tween:
+	guiObject.Position = START_POSITION
+	local willPlay = guiObject:TweenPosition(
+		GOAL_POSITION,           -- Final position the tween should reach
+		Enum.EasingDirection.In, -- Direction of the easing
+		Enum.EasingStyle.Sine,   -- Kind of easing to apply
+		2,                       -- Duration of the tween in seconds
+		true,                    -- Whether in-progress tweens are interrupted
+		callback                 -- Function to be callled when on completion/cancelation
+	)
+	if willPlay then
+		print("The tween will play")
+	else
+		print("The tween will not play")
+		end
+		end)
+end
+coroutine.wrap(YRAZITQ_fake_script)()
+local function UTTDI_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	Spinny = script.Parent
+	
+	while true do
+		wait(0.01)
+		Spinny.Rotation = Spinny.Rotation +2
+	end
+	
+end
+coroutine.wrap(UTTDI_fake_script)()
+-- Load.LocalScript is disabled.
